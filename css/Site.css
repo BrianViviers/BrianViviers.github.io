@@ -1,0 +1,9 @@
+﻿html {
+    background:url(../images/background.png) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+p {
+    font-size: 30pt; 
+    font-family: Courier New, Courier, monospace
+}
