@@ -4,9 +4,267 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/Site.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/horizontal.css" />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-2.2.2.min.js"></script>
     <title>Brian Viviers</title>
 </head>
 <body>
-    <p>{ a work in progress... }</p>
+    <div id="home-image" class="section">
+        <div id="logo-wrapper">
+            <a id="logo" href="#home-image">Brian Viviers</a>
+            <hr />
+            <div id="navbar" class="navbar">
+                <ul>
+                    <li><a href="#about" class="button">About</a></li>
+                    <li><a href="#experience" class="button">Experience</a></li>
+                    <li><a href="#portfolio" class="button">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="section">
+        <h1>About</h1>
+        <hr />
+        <h2>who knows...</h2>
+    </div>
+    <div id="experience" class="section">
+        <h1>Experience</h1>
+        <hr />
+        <h2>Education</h2>
+        <section id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="images/book.svg" alt="Picture">
+                </div>
+                <div class="cd-timeline-content">
+                    <h2>University of Plymouth</h2>
+                    <p>BSc (Hons) Computer Science</p>
+                    <p class="italic">High-level of practical content and researched-focused course accredited by the BCS, The Chartered Institute for IT.</p>
+                    <p>
+                        - Student ambassador for open/applicant days.<br />
+                        - Dean’s list award in recognition of excellent performance: 2013, 2014, 2015
+                    </p>
+                    <span class="cd-date">2012 – Present</span>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="images/book.svg" alt="Picture">
+                </div>
+                <div class="cd-timeline-content">
+                    <h2>King Edward High School, South Africa</h2>
+                    <p>Senior Certificate with Matriculation Endorsement</p>
+                    <p class="italic">Mathematics, Accounting, Physics, Chemistry, Technical Drawing, English and Afrikaans</p>
+                    <p>
+                        Deputy Head Boy and Prefect – 2004<br />
+                        Full Academic Colours – 2002, 2003, 2004<br />
+                        Captain 2nd Rugby Team – 2003<br />
+                        Member of the 1st Rugby & Hockey Teams - 2004<br />
+                        Participated in Athletics & Swimming<br />
+                    </p>
+                    <span class="cd-date">2000 – 2004</span>
+                </div>
+            </div>
+        </section>
+        <h2>Career History</h2>
+        <section id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="images/cd-icon-picture.svg" alt="Picture">
+                </div>
+                <div class="cd-timeline-content">
+                    <h2>Science and Technology Facilities Council - ISIS</h2>
+                    <p class="italic">
+                        Software Engineer for ISIS Business Systems
+                    </p>
+                    <p>
+                        The placement involved the specification, design, programming, testing deployment and
+                        documentation of software solutions to meet the business information management needs of the
+                        facility, scientists and users. Following the release of software, the products would go into maintenance
+                        phase and the role also included some work to support our customers (internal and external)
+                        in using existing and new systems.
+                    </p>
+                    <span class="cd-date">July 2015 - June 2016</span>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="images/book.svg" alt="Picture">
+                </div>
+                <div class="cd-timeline-content">
+                    <h2>University of Plymouth</h2>
+                    <p>Paid Robotics Programming Internship</p>
+                    <p class="italic">
+                        The design and development of a robot teleoperation experiment using the NAO Robot.
+                    </p>
+                    <p>
+                        Software developed in JavaScript, Python, C++, HTML and ROS (Robot Operating System) within Linux.<br />
+                        Responsible for conducting user experiments with members of the public.<br />
+                        All code developed is open-source
+                    </p>
+                    <span class="cd-date">2014 June-Aug</span>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="images/cd-icon-picture.svg" alt="Picture">
+                </div>
+                <div class="cd-timeline-content">
+                    <h2>University of Plymouth</h2>
+                    <p class="italic">Paid Robotics Programming Internship</p>
+                    <p>The design and development of PLANCs (Programmable or Learning Artificial Neural Circuits).</p>
+                    <p>
+                        Software developed in JavaScript, Python, HTML and ROS (Robot Operating System) within Linux.<br />
+                        All code developed is open-source
+                    </p>
+                    <span class="cd-date">2013 July-Sept</span>
+                </div>
+            </div>
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="images/cd-icon-picture.svg" alt="Picture">
+                </div>
+                <div class="cd-timeline-content">
+                    <h2>29<sup>th</sup> Commando Regiment Royal Artillery</h2>
+                    <p>Lance Bombardier</p>
+                    <p class="italic">Spearhead troops trained as amphibious, mountain and arctic warfare specialists. </p>
+                    <span class="cd-date">2006 – 2012</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="portfolio" class="section">
+        <h1>Portfolio</h1>
+        <hr />
+        <div class="flexbox-container">
+            <a id="compass" href="#compassModal" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-top">
+                    <h2 class="portfolio-item-text-heading animate">Magnetic Compass Application</h2>
+                    <h3 class="portfolio-item-text animate">Foundation Year University Project</h3>
+                </div>
+                <div class="portfolio-bottom">
+                    <img src="images/CompassRose.png" class="img-responsive animate" />
+                </div>
+                <i class="fa fa-search-plus fa-3x disappear animate"></i>
+            </a>
+            <a id="ants" href="#antsModal" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-top">
+                    <h2 class="portfolio-item-text-heading animate">Ant Colony Simulation</h2>
+                    <h3 class="portfolio-item-text animate">First Year University Project</h3>
+                </div>
+                <div class="portfolio-bottom">
+                    <img src="images/AntIcon.png" class="img-responsive animate" />
+                </div>
+                <i class="fa fa-search-plus fa-3x disappear animate"></i>
+            </a>
+            <a id="moose" href="#mooseModal" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-top">
+                    <h2 class="portfolio-item-text-heading animate">Artificial Life (Alife) and Genetic Algorithm</h2>
+                    <h3 class="portfolio-item-text animate">Second Year University Project</h3>
+                </div>
+                <div class="portfolio-bottom">
+                    <img src="images/moose.png" class="img-responsive animate" />
+                </div>
+                <i class="fa fa-search-plus fa-3x disappear animate"></i>
+            </a>
+        </div>
+    </div>
+    <div id="antsModal" class="modalWindow">
+        <a href="" class="close-antsModal close-modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </a>
+        <div class="modal-content">
+            <video controls>
+                <source src="videos\Ant.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div id="compassModal">
+        <a href="" class="close-compassModal close-modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </a>
+        <div class="modal-content">
+            <ul>
+                <li><img class="compass-img" src="images/Compass1.png" /></li>
+                <li><img class="compass-img" src="images/Compass2.png" /></li>
+                <li><img class="compass-img" src="images/Compass3.png" /></li>
+                <li><img class="compass-img" src="images/Compass4.png" /></li>
+            </ul>
+        </div>
+    </div>
+    <div id="mooseModal">
+        <a href="" class="close-mooseModal close-modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </a>
+        <div class="modal-content">
+            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="moose" align="middle">
+                <param name="movie" value="moose.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#0099ff" />
+                <param name="play" value="true" />
+                <param name="loop" value="true" />
+                <param name="wmode" value="window" />
+                <param name="scale" value="showall" />
+                <param name="menu" value="true" />
+                <param name="devicefont" value="false" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="moose.swf" width="100%" height="100%">
+                    <param name="movie" value="moose.swf" />
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#0099ff" />
+                    <param name="play" value="true" />
+                    <param name="loop" value="true" />
+                    <param name="wmode" value="window" />
+                    <param name="scale" value="showall" />
+                    <param name="menu" value="true" />
+                    <param name="devicefont" value="false" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflash">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                    </a>
+                    <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script type='text/javascript' src="js/Site.js"></script>
+    <script type='text/javascript' src="js/modernizr.js"></script>
+    <script type='text/javascript' src="js/jquery-2.2.2.min.js"></script>
+    <script type='text/javascript' src="js/sly.min.js"></script>
+    <script type='text/javascript' src="js/plugins.js"></script>
+    <script type='text/javascript' src="js/horizontal.js"></script>
+    <script type='text/javascript' src="js/animatedModal.min.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-75624758-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html> 
