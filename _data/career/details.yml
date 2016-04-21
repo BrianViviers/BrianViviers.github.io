@@ -1,0 +1,24 @@
+---
+- company: Science and Technology Facilities Council - ISIS
+  position: Software Engineer for ISIS Business Systems
+  description1: 
+  description2: 'The placement involved the specification, design, programming, testing deployment and documentation of software solutions to meet the business information management needs of the facility, scientists and users. Following the release of software, the products would go into maintenance phase and the role also included some work to support our customers (internal and external) in using existing and new systems.'
+  period: July 2015 - June 2016
+
+- company: University of Plymouth
+  position: Paid Robotics Programming Internship
+  description1: 'The design and development of a robot teleoperation experiment using the NAO Robot.'
+  description2: 'Software developed in JavaScript, Python, C++, HTML and ROS (Robot Operating System) within Linux. Responsible for conducting user experiments with members of the public. All code developed is open-source'
+  period: 2014 June - Aug
+
+- company: University of Plymouth
+  position: Paid Robotics Programming Internship
+  description1: 'The design and development of PLANCs (Programmable or Learning Artificial Neural Circuits).'
+  description2: 'Software developed in JavaScript, Python, HTML and ROS (Robot Operating System) within Linux. All code developed is open-source'
+  period: 2013 July - Sept
+
+- company: 29<sup>th</sup> Commando Regiment Royal Artillery
+  position: Lance Bombardier
+  description1: 'Spearhead troops trained as amphibious, mountain and arctic warfare specialists. '
+  description2: 
+  period: 2006 - 2012
