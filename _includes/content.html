@@ -1,5 +1,4 @@
-﻿
-<div id="home-image" class="section">
+﻿<div id="home-image" class="section">
     <div id="logo-wrapper">
         <a id="logo" href="#home-image">Brian Viviers</a>
         <hr />
@@ -22,43 +21,24 @@
     <hr />
     <h2>Education</h2>
     <section id="cd-timeline" class="cd-container">
+        {% for edu in site.data.education %}
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-picture">
                 <img src="images/book.svg" alt="Picture">
             </div>
             <div class="cd-timeline-content">
-                <h2>University of Plymouth</h2>
-                <p>BSc (Hons) Computer Science</p>
-                <p class="italic">High-level of practical content and researched-focused course accredited by the BCS, The Chartered Institute for IT.</p>
-                <p>
-                    - Student ambassador for open/applicant days.<br />
-                    - Dean’s list award in recognition of excellent performance: 2013, 2014, 2015
-                </p>
-                <span class="cd-date">2012 – Present</span>
+                <h2>{{ edu.school }}</h2>
+                <p>{{ edu.award }}</p>
+                <p class="italic">{{ edu.description1 }}</p>
+                <p>{{ edu.description2 }}</p>
+                <span class="cd-date">{{ edu.period }}</span>
             </div>
         </div>
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
-                <img src="images/book.svg" alt="Picture">
-            </div>
-            <div class="cd-timeline-content">
-                <h2>King Edward High School, South Africa</h2>
-                <p>Senior Certificate with Matriculation Endorsement</p>
-                <p class="italic">Mathematics, Accounting, Physics, Chemistry, Technical Drawing, English and Afrikaans</p>
-                <p>
-                    Deputy Head Boy and Prefect – 2004<br />
-                    Full Academic Colours – 2002, 2003, 2004<br />
-                    Captain 2nd Rugby Team – 2003<br />
-                    Member of the 1st Rugby & Hockey Teams - 2004<br />
-                    Participated in Athletics & Swimming<br />
-                </p>
-                <span class="cd-date">2000 – 2004</span>
-            </div>
-        </div>
+        {% endfor %}
     </section>
     <h2>Career History</h2>
     <section id="cd-timeline" class="cd-container">
-        {% for job in site.data.career.details %}
+        {% for job in site.data.career %}
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-picture">
                 <img src="images/cd-icon-picture.svg" alt="Picture">
@@ -82,7 +62,7 @@
     <h1>Portfolio</h1>
     <hr />
     <div class="flexbox-container">
-        {% for portfolio in site.data.portfolio.portfolio %}
+        {% for portfolio in site.data.portfolio %}
         <a id="{{ portfolio.id }}" href="#{{ portfolio.href }}" class="portfolio-link" data-toggle="modal">
             <div class="portfolio-top">
                 <h2 class="portfolio-item-text-heading">{{ portfolio.heading }}</h2>
@@ -97,7 +77,7 @@
     </div>
 </div>
 
-{% for portfolio_objects in site.data.portfolio.portfolio_objects %}
+{% for portfolio_objects in site.data.portfolio_objects %}
 <div id="{{ portfolio_objects.id }}" class="modalWindow">
     <a href="" class="close-{{ portfolio_objects.id }} close-modal">
         <div class="lr">
