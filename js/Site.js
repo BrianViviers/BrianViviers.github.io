@@ -10,6 +10,8 @@
             $('#logo').removeClass('logo-fixed');
         }
     });
+    
+    $("#year").text(new Date().getFullYear());
 
     $("#ants").animatedModal({
         modalTarget: 'antsModal',

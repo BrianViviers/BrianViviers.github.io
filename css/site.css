@@ -8,6 +8,27 @@ body {
     margin: 0 !important;
     font-family: 'Open Sans', sans-serif;
     background-color: #e9f0f5;
+    font-size: 100%;
+    color: #7f8c97;
+}
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 
 p {
@@ -220,6 +241,12 @@ sup {
     transition: all .5s ease-in-out;
 }
 
+div .flexbox-container * {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
 .portfolio-link {
     position: relative;
 }
@@ -293,10 +320,6 @@ object, video {
     opacity: .1;
 }
 
-/*.oneperframe {
-    height: 95vh !important;
-}*/
-
 .close-modal {
     position: absolute;
     top: 25px;
@@ -336,4 +359,8 @@ object, video {
     margin: 20px;
     text-align: center;
     vertical-align: middle;
+}
+
+#copyright {
+    font-style: italic;
 }
