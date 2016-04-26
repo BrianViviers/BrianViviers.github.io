@@ -15,3 +15,9 @@
   image: images/moose.png
   id: moose
   href: mooseModal
+
+- heading: 3 Body Problem
+  description: Foundation Year University Project
+  image: images/3-body/sun.png
+  id: threebody
+  href: threebodyModal

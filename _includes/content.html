@@ -14,7 +14,7 @@
 <div id="about" class="section">
     <h1>About</h1>
     <hr />
-    <h2>Hi, I'm Brian. </h2>
+    <h2>{{ site.data.about.intro }}</h2>
 </div>
 <div id="experience" class="section">
     <h1>Experience</h1>
@@ -37,6 +37,7 @@
         {% endfor %}
     </section>
     <h2>Career History</h2>
+    <hr />
     <section id="cd-timeline" class="cd-container">
         {% for job in site.data.career %}
         <div class="cd-timeline-block">

@@ -84,6 +84,30 @@
         }
     });
 
+    $("#threebody").animatedModal({
+        modalTarget: 'threebodyModal',
+        animatedIn: 'lightSpeedIn',
+        animatedOut: 'bounceOutDown',
+        color: '#39BEB9',
+        beforeOpen: function () {
+
+            var children = $(".thumb");
+            var index = 0;
+
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.slideRightIn", { opacity: 1, stagger: 450, defaultDuration: 100 });
+                window.setTimeout(addClassNextChild, 100);
+            }
+
+            addClassNextChild();
+
+        },
+        afterClose: function () {
+            $(".thumb").hide();
+        }
+    });
+
     $(function () {
         $('a[href*="#"]:not([href="#"])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
