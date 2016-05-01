@@ -2,27 +2,10 @@
 <html>
 <head>
     <title>3 Body Problem</title>
-    <style type="text/css">
-        body {
-            color: White;
-            background-image: url(../images/3-body/sky.jpg);
-        }
-
-        .planetStyle {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-        }
-
-        #description {
-            left: 10px;
-            top: 50px;
-            position: absolute; /* this is absolute to prevent a scroll bar appearing! */
-            color: White;
-        }
-    </style>
+    <link rel="stylesheet" href="css/three_body.css" />
 </head>
 <body>
+    <div class="imgElem"></div>
     Speed: <select id="speedInput">
         <option value="0.01">0.01</option>
         <option value="0.1">0.1</option>
@@ -64,7 +47,6 @@
     <input id="twoBodyStart" type="button" value="Sun/Planet/Moon" onclick="twoBodyStart()" />
     <input id="sunTwoPlanets" type="button" value="Sun and 2 Planets" onclick="sunTwoPlanets()" />
     <input id="resetBtn" type="button" value="Stop" onclick="resetBtn()" />
-    <input id="Gamebtn" type="button" value="Game" onclick="GameBtn_onclick()" />
     <label id="planetGrid"></label>
     <img id="asteroid" src="../images/3-body/Asteroid.png" alt="An Asteroid" style="position:absolute; visibility:hidden;" />
     <img id="station" src="../images/3-body/station.png" alt="Space Station" style="position:absolute; visibility:hidden; height:80px; width:80px;" /><br />

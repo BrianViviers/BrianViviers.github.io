@@ -147,7 +147,7 @@ function twoBodyStart() {
 function sunTwoPlanets() {
     Gameoff();
     document.getElementById("sunTwoPlanets").blur();
-    description.innerHTML = "Two Planets orbiting a Sun in a \"chaotic\" but continuous manner." + "If sun is moving then refresh the browser and reclick button!";
+    description.innerHTML = "Two Planets orbiting a Sun in a \"chaotic\" but continuous manner.";
     timerReset();
     setValuesSunTwoPlanets();
 }
@@ -378,9 +378,6 @@ function cannon(obj0, a) {
 }
 
 function AsteroidGame() {
-    //SF = scaleInput.value
-    //document.getElementById("asteroid").x = document.getElementById("asteroid").x + astX   //i dont know how to do your class thing to do the gravity stuff
-    //document.getElementById("asteroid").style.top = document.getElementById("asteroid").style.top - astY
     collide();
     if (document.getElementById("asteroid").style.left > document.body.clientwidth) {
         window.clearInterval(asteroidTimer);
