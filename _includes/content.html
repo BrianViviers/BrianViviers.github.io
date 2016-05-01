@@ -4,64 +4,34 @@
         <hr />
         <div id="navbar" class="navbar">
             <ul>
-                <li><a href="#about" class="button">About</a></li>
                 <li><a href="#experience" class="button">Experience</a></li>
                 <li><a href="#portfolio" class="button">Portfolio</a></li>
             </ul>
         </div>
     </div>
 </div>
-<div id="about" class="section">
-    <h1>About</h1>
-    <hr />
-    <h2>{{ site.data.about.intro }}</h2>
-</div>
 <div id="experience" class="section">
-    <h1>Experience</h1>
-    <hr />
-    <h2>Education</h2>
-    <section id="cd-timeline" class="cd-container">
-        {% for edu in site.data.education %}
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
-                <img src="images/book.svg" alt="Picture">
-            </div>
-            <div class="cd-timeline-content">
-                <h2>{{ edu.school }}</h2>
-                <p>{{ edu.award }}</p>
-                <p class="italic">{{ edu.description1 }}</p>
-                <p>{{ edu.description2 }}</p>
-                <span class="cd-date">{{ edu.period }}</span>
-            </div>
-        </div>
-        {% endfor %}
-    </section>
-    <h2>Career History</h2>
-    <hr />
-    <section id="cd-timeline" class="cd-container">
-        {% for job in site.data.career %}
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
-                <img src="images/cd-icon-picture.svg" alt="Picture">
-            </div>
-            <div class="cd-timeline-content">
-                <h2>{{ job.company }}</h2>
-                <p>{{ job.position }}</p>
-                <p class="italic">
-                    {{ job.description1 }}
-                </p>
-                <p>
-                    {{ job.description2 }}
-                </p>
-                <span class="cd-date">{{ job.period }}</span>
+    <h2><span class="line"></span>Here's what I've done so far<span class="line"></span></h2>
+    <div class="experience-container">
+        {% for exp in site.data.experience %}
+        <div class="experience-item">
+            <span class="experience-item-img">
+                <img src="../images/{{ exp.image }}" alt="{{ exp.image }}" />
+            </span>
+            <div class="experience-item-description">
+                <h2>{{ exp.place }}</h2>
+                <span class="experience-position">{{ exp.position }}</span> - 
+                <span class="experience-date">{{ exp.period }}</span>
+                <div>{{ exp.title }}</div>
+                <div class="italic">{{ exp.description1 }}</div>
+                <div>{{ exp.description2 }}</div>
             </div>
         </div>
         {% endfor %}
-    </section>
+    </div>
 </div>
 <div id="portfolio" class="section">
-    <h1>Portfolio</h1>
-    <hr />
+    <h2><span class="line"></span>Some projects I have done<span class="line"></span></h2>
     <div class="flexbox-container">
         {% for portfolio in site.data.portfolio %}
         <a id="{{ portfolio.id }}" href="#{{ portfolio.href }}" class="portfolio-link" data-toggle="modal">
