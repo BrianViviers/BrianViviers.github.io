@@ -302,12 +302,6 @@ div .flexbox-container * {
     text-align: center;
 }
 
-@media (max-width: 640px) {
-    .flexbox-container {
-        flex-flow: column wrap;
-    }
-}
-
 img {
     max-width: 100%;
     max-height: 100%;
@@ -442,26 +436,35 @@ object, video {
 .experience-item {
     display: -webkit-box;
     display: flex;
+    display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
     max-width: 100vw;
     flex-flow: row;
     margin: 20px;
 }
 
 .experience-item-img {
-    flex: 1;
     text-align: center;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0; 
 }
 
 .experience-item-img img {
-    width: auto;
-    height: auto;
-    max-width: 200px;
+    max-width: 100%;
     max-height:200px;
 }
 
 .experience-item-description {
-    flex: 3;
     margin-left: 20px;
+    -webkit-box-flex: 3;
+    -moz-box-flex: 3;
+    box-flex: 3;
+    -webkit-flex: 3 1 0;
+    flex: 3 1 0; 
 }
 
 .experience-item-description h2 {
@@ -483,4 +486,12 @@ object, video {
 .experience-position {
     font-style: italic;
     color: forestgreen;
+}
+
+@media (max-width: 640px) {
+
+
+    .experience-container {
+        width: 100%;
+    }
 }
