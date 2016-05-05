@@ -13,99 +13,30 @@
     
     $("#year").text(new Date().getFullYear());
 
-    $("#ants").animatedModal({
-        modalTarget: 'antsModal',
-        animatedIn: 'lightSpeedIn',
-        animatedOut: 'bounceOutDown',
-        color: '#39BEB9',
-        beforeOpen: function () {
-
-            var children = $(".thumb");
-            var index = 0;
-
-            function addClassNextChild() {
-                if (index == children.length) return;
-                children.eq(index++).show().velocity("transition.slideRightIn", { opacity: 1, stagger: 450, defaultDuration: 100 });
-                window.setTimeout(addClassNextChild, 100);
-            }
-
-            addClassNextChild();
-
-        },
-        afterClose: function () {
-            $(".thumb").hide();
+    $(".slider input[name='slide_switch']").on('click', function () {
+        for (var i = 1; i <= 10; i++) {
+            $(".slider #lets" + i).nextAll().eq(1).css('z-index', 10);
         }
+        $(this).nextAll().eq(1).css('z-index', 3000);
+    });
+
+    $("#ants").animatedModal({
+        modalTarget: 'antsModal'
     });
     $("#moose").animatedModal({
-        modalTarget: 'mooseModal',
-        animatedIn: 'lightSpeedIn',
-        animatedOut: 'bounceOutDown',
-        color: '#39BEB9',
-        beforeOpen: function () {
-
-            var children = $(".thumb");
-            var index = 0;
-
-            function addClassNextChild() {
-                if (index == children.length) return;
-                children.eq(index++).show().velocity("transition.slideRightIn", { opacity: 1, stagger: 450, defaultDuration: 100 });
-                window.setTimeout(addClassNextChild, 100);
-            }
-
-            addClassNextChild();
-
-        },
-        afterClose: function () {
-            $(".thumb").hide();
-        }
+        modalTarget: 'mooseModal'
     });
 
     $("#compass").animatedModal({
-        modalTarget: 'compassModal',
-        animatedIn: 'lightSpeedIn',
-        animatedOut: 'bounceOutDown',
-        color: '#39BEB9',
-        beforeOpen: function () {
-
-            var children = $(".thumb");
-            var index = 0;
-
-            function addClassNextChild() {
-                if (index == children.length) return;
-                children.eq(index++).show().velocity("transition.slideRightIn", { opacity: 1, stagger: 450, defaultDuration: 100 });
-                window.setTimeout(addClassNextChild, 100);
-            }
-
-            addClassNextChild();
-
-        },
-        afterClose: function () {
-            $(".thumb").hide();
-        }
+        modalTarget: 'compassModal'
     });
 
     $("#threebody").animatedModal({
-        modalTarget: 'threebodyModal',
-        animatedIn: 'lightSpeedIn',
-        animatedOut: 'bounceOutDown',
-        color: '#39BEB9',
-        beforeOpen: function () {
+        modalTarget: 'threebodyModal'
+    });
 
-            var children = $(".thumb");
-            var index = 0;
-
-            function addClassNextChild() {
-                if (index == children.length) return;
-                children.eq(index++).show().velocity("transition.slideRightIn", { opacity: 1, stagger: 450, defaultDuration: 100 });
-                window.setTimeout(addClassNextChild, 100);
-            }
-
-            addClassNextChild();
-
-        },
-        afterClose: function () {
-            $(".thumb").hide();
-        }
+    $("#lets").animatedModal({
+        modalTarget: 'letsModal'
     });
 
     $(function () {

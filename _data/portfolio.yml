@@ -21,3 +21,9 @@
   image: images/3-body/sun.png
   id: threebody
   href: threebodyModal
+
+- heading: Local Exchange Trading Scheme
+  description: Second Year University Project
+  image: images/lets/lets_logo.png
+  id: lets
+  href: letsModal

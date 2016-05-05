@@ -48,16 +48,16 @@
     </div>
 </div>
 
-{% for portfolio_objects in site.data.portfolio_objects %}
-<div id="{{ portfolio_objects.id }}" class="modalWindow">
-    <a href="" class="close-{{ portfolio_objects.id }} close-modal">
+{% for portfolio in site.data.portfolio %}
+<div id="{{ portfolio.href }}" class="modalWindow">
+    <a href="" class="close-{{ portfolio.href }} close-modal">
         <div class="lr">
             <div class="rl">
             </div>
         </div>
     </a>
     <div class="modal-content">
-        {% capture content %}{% include {{portfolio_objects.id}}.html %}{% endcapture %}
+        {% capture content %}{% include {{ portfolio.href }}.html %}{% endcapture %}
         {{ content  }}
     </div>
 </div>
