@@ -184,11 +184,11 @@ li a:hover {
     text-align: center;
 }
 
-    #logo-wrapper hr {
-        width: 33%;
-        margin-left: 33%;
-        border-color: white;
-    }
+#logo-wrapper hr {
+    width: 33%;
+    margin-left: 33%;
+    border-color: white;
+}
 
 #homeButton {
     position: absolute;
@@ -313,7 +313,6 @@ img {
 
 footer {
     background: url(../images/dark_texture.jpg) repeat;
-    height: 200px;
     width: 100%;
 }
 
@@ -413,6 +412,15 @@ footer {
     flex: 1 100%;
     padding: 10px;
     color: white;
+}
+
+.footer-img {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.footer-img img {
+    border-radius: 50%;
 }
 
 #3_body {
